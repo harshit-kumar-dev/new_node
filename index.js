@@ -12,7 +12,6 @@ app.get("/", (req, res) => {
   res.send("Hi, my name is Harshit kumar");
 });
 
-
 // this first will always run and it will never run the sescond.  (as EXPRESS checks from top to bottom).
   app.get("/route2/:one", (req, res) => {
     res.send("Express server is running here in route 2");
@@ -23,7 +22,6 @@ app.get("/", (req, res) => {
       res.status(200).json(users);
       console.log("second");
   });
-
 
 
 // check the id and give the result
